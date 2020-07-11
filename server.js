@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path') 
+const fs = require('fs');
 
 
 const app1 = express();
@@ -29,35 +30,49 @@ app1.listen(PORT1, () => console.log("Server started on port " + PORT1)
 
 // Listens to node 2
 
+app2.get('/', (req, res) => res.sendFile(path.join (__dirname + "/public/index.html")));
+app2.use( express.static( __dirname + '/public' ));
 app2.listen(PORT2, () => console.log("Server started on port " + PORT2)
 );
 
 // Listens to node 3
 
+app3.get('/', (req, res) => res.sendFile(path.join (__dirname + "/public/index.html")));
+app3.use( express.static( __dirname + '/public' ));
 app3.listen(PORT3, () => console.log("Server started on port " + PORT3)
 );
 
 // Listens to node 4
 
+app4.get('/', (req, res) => res.sendFile(path.join (__dirname + "/public/index.html")));
+app4.use( express.static( __dirname + '/public' ));
 app4.listen(PORT4, () => console.log("Server started on port " + PORT4)
 );
 
 // Listens to node 5
 
+app5.get('/', (req, res) => res.sendFile(path.join (__dirname + "/public/index.html")));
+app5.use( express.static( __dirname + '/public' ));
 app5.listen(PORT5, () => console.log("Server started on port " + PORT5)
 );
 
 // Listens to node 6
 
+app6.get('/', (req, res) => res.sendFile(path.join (__dirname + "/public/index.html")));
+app6.use( express.static( __dirname + '/public' ));
 app6.listen(PORT6, () => console.log("Server started on port " + PORT6)
 );
 
 // Listens to node 7
 
+app7.get('/', (req, res) => res.sendFile(path.join (__dirname + "/public/index.html")));
+app7.use( express.static( __dirname + '/public' ));
 app7.listen(PORT7, () => console.log("Server started on port " + PORT7)
 );
 
 // Listens to node 8
 
+app8.get('/', (req, res) => res.sendFile(path.join (__dirname + "/public/index.html")));
+app8.use( express.static( __dirname + '/public' ));
 app8.listen(PORT8, () => console.log("Server started on port " + PORT8)
 );
