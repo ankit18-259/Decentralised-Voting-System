@@ -1,0 +1,22 @@
+{
+  "name": "decentralised-voting-system",
+  "version": "1.0.0",
+  "description": "Technology stack(Web Implementation):",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankit18-259/Decentralised-Voting-System.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankit18-259/Decentralised-Voting-System/issues"
+  },
+  "homepage": "https://github.com/ankit18-259/Decentralised-Voting-System#readme",
+  "dependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
