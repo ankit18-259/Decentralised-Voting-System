@@ -1,33 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="decentralisedvotingsystem">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-
-  <title>decentralisedvotingsystem</title>
-  <link rel="manifest" href="manifest.json">
+  
+  <title>Decentralised Voting</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="js/indexScript.js" type="text/javascript"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; 
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; 
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; 
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f;
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+	.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+	}
+	.button1 {background-color: #4CAF50;}
+  </style>
 </head>
 <body>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js');
-      });
-    }
-  </script>
-  <script src="main.dart.js" type="application/javascript"></script>
+	<div class="container-fluid bg-4 text-center">
+		<h3 class="margin" id="Heading">Decentralised Voting System</h3>
+		<button class="button button1" id = "candidate1" onclick="abcd('candidate1');">Candidate 1</button><br>
+		<button class="button button1" id = "candidate2" onclick="abcd('candidate2');">Candidate 2</button><br>
+		<button class="button button1" id = "candidate3" onclick="abcd('candidate3');">Candidate 3</button><br>
+		<button class="button button1" id = "candidate4" onclick="abcd('candidate4');">Candidate 4</button><br>
+		<button class="button button1" id = "candidate5" onclick="abcd('candidate5');">Candidate 5</button><br>
+		<button class="button button1" id = "candidate6" onclick="abcd('candidate6');">Candidate 6</button><br>
+		<button class="button button1" id = "candidate7" onclick="abcd('candidate7');">Candidate 7</button><br>
+		<button class="button button1" id = "candidate8" onclick="abcd('candidate8');">Candidate 8</button><br><br><br>
+		<button class="button button1" id = "Submit" onclick="submit();">Submit</button>
+	</div>
 </body>
-</html>
