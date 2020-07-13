@@ -10,35 +10,35 @@ var votesForCandidate8 = 0;
 function abcd(id)
 {
     
-    if(id=="candidate1")
+    if(id=='candidate1')
     {
         votesForCandidate1++;
     }
-    if(id=="candidate1")
+    if(id=='candidate2')
     {
         votesForCandidate2++;
     }
-    if(id=="candidate1")
+    if(id=='candidate3')
     {
         votesForCandidate3++;
     }
-    if(id=="candidate1")
+    if(id=='candidate4')
     {
         votesForCandidate4++;
     }
-    if(id=="candidate1")
+    if(id=='candidate5')
     {
         votesForCandidate5++;
     }
-    if(id=="candidate1")
+    if(id=='candidate6')
     {
         votesForCandidate6++;
     }
-    if(id=="candidate1")
+    if(id=='candidate7')
     {
         votesForCandidate7++;
     }
-    if(id=="candidate1")
+    if(id=='candidate8')
     {
         votesForCandidate8++;
     }
