@@ -5,7 +5,7 @@ Technology stack(Web Implementation):
     Frontend:
     > HTML
     > CSS
-    >
+    > Flutter
 
     Backend:
     > NodeJS
