@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ankit18-259/Decentralised-Voting-System#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "nodemon": "^2.0.4"
   }
 }

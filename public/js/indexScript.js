@@ -7,6 +7,7 @@ var votesForCandidate6 = 0;
 var votesForCandidate7 = 0;
 var votesForCandidate8 = 0;
 
+
 function abcd(id)
 {
     
@@ -44,7 +45,36 @@ function abcd(id)
     }
     alert("Done");
 }
+
+function gotoJSON()
+{
+    var votes = {
+        "Candidate1" : votesForCandidate1,
+        "Candidate2" : votesForCandidate2,
+        "Candidate3" : votesForCandidate3,
+        "Candidate4" : votesForCandidate4,
+        "Candidate5" : votesForCandidate5,
+        "Candidate6" : votesForCandidate6,
+        "Candidate7" : votesForCandidate7,
+        "Candidate8" : votesForCandidate8
+    };
+
+    return votes;
+}
+
 function submit()
 {
-    alert("Submitted")
+    var JSONdata = gotoJSON();
+    var s = JSON.stringify(JSONdata, null, 2);
+    let xhr = new XMLHttpRequest();
+    url = "submit";
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-Type", "text/plain");  
+    xhr.onreadystatechange = function () { 
+        if (xhr.readyState === 4 && xhr.status === 200) { 
+                result.innerHTML = this.responseText; 
+            } 
+        }; 
+        xhr.send(s); 
+    alert("Submitted");
 }
