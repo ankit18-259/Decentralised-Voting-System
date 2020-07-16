@@ -1,15 +1,14 @@
-var votesForCandidate1 = 0;
-var votesForCandidate2 = 0;
-var votesForCandidate3 = 0;
-var votesForCandidate4 = 0;
-var votesForCandidate5 = 0;
-var votesForCandidate6 = 0;
-var votesForCandidate7 = 0;
-var votesForCandidate8 = 0;
-
 
 function abcd(id)
 {
+    var votesForCandidate1 = 0;
+    var votesForCandidate2 = 0;
+    var votesForCandidate3 = 0;
+    var votesForCandidate4 = 0;
+    var votesForCandidate5 = 0;
+    var votesForCandidate6 = 0;
+    var votesForCandidate7 = 0;
+    var votesForCandidate8 = 0;
     
     if(id=='candidate1')
     {
@@ -43,28 +42,29 @@ function abcd(id)
     {
         votesForCandidate8++;
     }
+    if(id=='getJSONdata')
+    {
+        var votes = {
+            "Candidate1" : votesForCandidate1,
+            "Candidate2" : votesForCandidate2,
+            "Candidate3" : votesForCandidate3,
+            "Candidate4" : votesForCandidate4,
+            "Candidate5" : votesForCandidate5,
+            "Candidate6" : votesForCandidate6,
+            "Candidate7" : votesForCandidate7,
+            "Candidate8" : votesForCandidate8
+        };
+    
+    return votes;
+    }
     alert("Done");
 }
 
-function gotoJSON()
-{
-    var votes = {
-        "Candidate1" : votesForCandidate1,
-        "Candidate2" : votesForCandidate2,
-        "Candidate3" : votesForCandidate3,
-        "Candidate4" : votesForCandidate4,
-        "Candidate5" : votesForCandidate5,
-        "Candidate6" : votesForCandidate6,
-        "Candidate7" : votesForCandidate7,
-        "Candidate8" : votesForCandidate8
-    };
 
-    return votes;
-}
 
 function submit()
 {
-    var JSONdata = gotoJSON();
+    var JSONdata = abcd('getJSONdata')
     var s = JSON.stringify(JSONdata, null, 2);
     let xhr = new XMLHttpRequest();
     url = "submit";
