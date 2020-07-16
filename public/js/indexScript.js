@@ -48,47 +48,24 @@ function abcd(id)
 
 function gotoJSON()
 {
-    var votes = [];
-    
-    var candidate1 = {
-        "Candidate1" : votesForCandidate1
-    }
-    votes.push(candidate1);
-    
-    var candidate2 = {
-        "Candidate2" : votesForCandidate2
-    }
-    votes.push(candidate2);
-    
-    var candidate3 = {
-        "Candidate3" : votesForCandidate3
-    }
-    votes.push(candidate3);
-    
-    var candidate4 = {
-        "Candidate4" : votesForCandidate4
-    }
-    votes.push(candidate4);
-    
-    var candidate5 = {
-        "Candidate5" : votesForCandidate5
-    }
-    votes.push(candidate5);
-    
-    var candidate6 = {
-        "Candidate6" : votesForCandidate6
-    }
-    votes.push(candidate6);
-    
-    var candidate7 = {
-        "Candidate7" : votesForCandidate7
-    }
-    votes.push(candidate7);
-    
-    var candidate8 = {
-        "Candidate8" : votesForCandidate8
-    }
-    votes.push(candidate8);
+    var votes = {"Candidates":{
+                "0":"Candidate1",
+                "1":"Candidate2",
+                "2":"Candidate3",
+                "3":"Candidate4",
+                "4":"Candidate5",
+                "5":"Candidate6",
+                "6":"Candidate7",
+                "7":"Candidate8"},
+                 "No of Votes":{
+                "0":votesForCandidate1,
+                "1":votesForCandidate2,
+                "2":votesForCandidate3,
+                "3":votesForCandidate4,
+                "4":votesForCandidate5,
+                "5":votesForCandidate6,
+                "6":votesForCandidate7,
+                "7":votesForCandidate8}}
     
     return votes;
 }
